@@ -1,0 +1,14 @@
+Description: Remove generated date
+Author: Sebastian Ramacher <sramacher@debian.org>
+Last-Update: 2015-09-20
+
+--- a/setup.py
++++ b/setup.py
+@@ -237,7 +237,6 @@
+         with open(fname, 'w') as fout:
+             fout.write(
+                 '"""{variable_proper} table. Created by setup.py."""\n'
+-                "# Generated: {iso_utc}\n"
+                 "# Source: {version}\n"
+                 "# Date: {date}\n"
+                 "{variable} = (".format(iso_utc=utc_now.isoformat(),

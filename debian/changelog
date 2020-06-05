@@ -1,0 +1,150 @@
+wcwidth (0.1.9+dfsg1-2) unstable; urgency=medium
+
+  * Drop PyPy support.
+  * Bump debhelper compat level to 13.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 05 Jun 2020 12:29:55 +0200
+
+wcwidth (0.1.9+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Set Rules-Requires-Root: no.
+  * Bump Standards-Version to 4.5.0.
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 27 Apr 2020 07:47:45 +0200
+
+wcwidth (0.1.8+dfsg1-5) unstable; urgency=medium
+
+  * Drop python2 support; Closes: #938809
+
+ -- Sandro Tosi <morph@debian.org>  Tue, 14 Apr 2020 09:58:17 -0400
+
+wcwidth (0.1.8+dfsg1-4) unstable; urgency=medium
+
+  * Dont run unittests for python2 binary, to reduce pytest rdeps
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 13 Apr 2020 20:29:09 -0400
+
+wcwidth (0.1.8+dfsg1-3) unstable; urgency=medium
+
+  * Build unicode reference files using Python 3.
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 20 Jan 2020 08:32:33 +0100
+
+wcwidth (0.1.8+dfsg1-2) unstable; urgency=medium
+
+  * Build using python2.
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 20 Jan 2020 08:14:42 +0100
+
+wcwidth (0.1.8+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.4.1.
+  * d/copyright: Bump my copyright year.
+
+ -- Ondřej Nový <onovy@debian.org>  Wed, 08 Jan 2020 17:05:25 +0100
+
+wcwidth (0.1.7+dfsg1-6) unstable; urgency=medium
+
+  * Remove Sebastian Ramacher from uploaders as he requested.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 02 Aug 2019 22:52:26 +0200
+
+wcwidth (0.1.7+dfsg1-5) unstable; urgency=medium
+
+  * Source-only reupload to allow migration after uploading to NEW.
+
+ -- Ondřej Nový <onovy@debian.org>  Thu, 01 Aug 2019 13:06:39 +0200
+
+wcwidth (0.1.7+dfsg1-4) unstable; urgency=medium
+
+  * Change Maintainer to Debian Python Modules Team in agreement with
+    Sebastian Ramacher
+  * d/rules: Set PYBUILD_NAME
+  * Bump debhelper compat level to 12 and use debhelper-compat
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+  * Add pypy-wcwidth
+  * d/copyright: Add myself for debian/ part
+  * Do wrap-and-sort -bast
+  * d/clean: Remove, not needed anymore
+  * Add upstream metadata
+  * Enable autopkgtest-pkg-python testsuite
+
+ -- Ondřej Nový <onovy@debian.org>  Sun, 21 Jul 2019 14:58:54 +0200
+
+wcwidth (0.1.7+dfsg1-3) unstable; urgency=medium
+
+  * Rebuild against unicode-data 12.1.0~pre1-2. (Closes: #928019)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 12 May 2019 11:11:32 +0200
+
+wcwidth (0.1.7+dfsg1-2) unstable; urgency=medium
+
+  * debian/control:
+    - Move to salsa.d.o.
+    - Bump Standards-Version.
+  * debian/:
+    - Bump debehlper compat to 11.
+    - Use HTTPS.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Fri, 11 May 2018 09:28:24 +0200
+
+wcwidth (0.1.7+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches/-bugfix-Use-utf-8-encoding-for-upstream-.txt-files.patch:
+    Removed.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 28 Aug 2016 13:59:53 +0200
+
+wcwidth (0.1.6+dfsg1-2) unstable; urgency=medium
+
+  * debian/patches/-bugfix-Use-utf-8-encoding-for-upstream-.txt-files.patch:
+    Apply upstream patch to fix issue with UTF-8 encoding in Unicode data
+    (Closes: #829235)
+  * debian/control:
+    - Bump Standards-Version.
+    - Update Vcs-*.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 02 Jul 2016 09:42:05 +0200
+
+wcwidth (0.1.6+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    - Update Files-Excluded.
+    - Update copyright years.
+  * debian/clean: Remove table_zero.py instead of table_comb.py.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 16 Jan 2016 13:10:01 +0100
+
+wcwidth (0.1.5+dfsg1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches: Refreshed.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 20 Sep 2015 12:15:39 +0200
+
+wcwidth (0.1.4+dfsg1-1) unstable; urgency=medium
+
+  * Repack to remove cruft without source from upstream tarball. (Closes:
+    #798569)
+    - debian/copyright: Add Files-Excluded.
+    - debian/watch: Add repacksuffix and dversionmangle.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 10 Sep 2015 17:58:41 +0200
+
+wcwidth (0.1.4-2) unstable; urgency=medium
+
+  * debian/watch: Use PyPI redirector.
+  * debian/patches/remove-generated-date.patch: Remove generated date to make
+    build reproducible.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 06 Jun 2015 00:24:06 +0200
+
+wcwidth (0.1.4-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #770704)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 23 Nov 2014 14:56:27 +0100

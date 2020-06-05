@@ -1,0 +1,31 @@
+Source: wcwidth
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders:
+ Ondřej Nový <onovy@debian.org>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all,
+ python3-pytest,
+ python3-setuptools,
+ unicode-data,
+Standards-Version: 4.5.0
+Homepage: https://pypi.python.org/pypi/wcwidth
+Vcs-Git: https://salsa.debian.org/python-team/modules/wcwidth.git
+Vcs-Browser: https://salsa.debian.org/python-team/modules/wcwidth
+Testsuite: autopkgtest-pkg-python
+Rules-Requires-Root: no
+
+Package: python3-wcwidth
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: determine printable width of a string on a terminal (Python 3)
+ wcwidth allows one to determine the printable width of a string on a terminal.
+ It provides functions similar to wcwidth(3) and wcswidth(3) for Python
+ programs.
+ .
+ This package provides the module for Python 3.
