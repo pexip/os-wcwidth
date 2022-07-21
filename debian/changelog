@@ -1,4 +1,4 @@
-wcwidth (0.1.9+dfsg1-2pexip1) pexip; urgency=medium
+wcwidth (0.1.9+dfsg1-2pexip1) pexip-bullseye; urgency=medium
 
   * Prepare Pexip packaging
 
