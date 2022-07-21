@@ -1,3 +1,9 @@
+wcwidth (0.1.9+dfsg1-2pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 21 Jul 2022 11:01:27 +0100
+
 wcwidth (0.1.9+dfsg1-2) unstable; urgency=medium
 
   * Drop PyPy support.
