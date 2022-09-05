@@ -1,3 +1,9 @@
+wcwidth (0.1.9+dfsg1-2pexip3) pexip-bullseye; urgency=medium
+
+  * Bullseye rebuild for ARM64 inclusion
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Mon, 05 Sep 2022 10:36:15 +0100
+
 wcwidth (0.1.9+dfsg1-2pexip2) pexip-bullseye; urgency=medium
 
   * Rebuild for override changes
