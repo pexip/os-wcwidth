@@ -1,0 +1,15 @@
+Description: Remove looponfailroots option from tox.ini
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-01-27
+
+--- wcwidth-0.2.5+dfsg1.orig/tox.ini
++++ wcwidth-0.2.5+dfsg1/tox.ini
+@@ -31,7 +31,6 @@ known_third_party = codecov,docopt,bless
+ atomic = true
+ 
+ [pytest]
+-looponfailroots = wcwidth
+ norecursedirs = .git .tox build
+ addopts = --disable-pytest-warnings
+           --cov-append --cov-report=html --color=yes --ignore=setup.py --ignore=.tox

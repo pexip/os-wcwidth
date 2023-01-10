@@ -1,3 +1,37 @@
+wcwidth (0.2.5+dfsg1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload by the Reproducible Builds team.
+  * Apply patch from Vagrant Cascadian to make the package build reproducible
+    by removing a comment from bin/update-tables.py which embedded the build
+    path and timestamp. Closes: #1005408
+
+ -- Holger Levsen <holger@debian.org>  Tue, 10 Jan 2023 23:40:10 +0100
+
+wcwidth (0.2.5+dfsg1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Remove obsolete field Name from debian/upstream/metadata (already present in
+    machine-readable debian/copyright).
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Thomas Goirand ]
+  * Team upload.
+  * New upstream release.
+  * Rewrite unicode-data patches.
+  * Add python3-pytest-cov as build-depends.
+  * Add remove-looponfailroots-option-from-tox.ini.patch.
+  * Override dh_auto_{test,install}.
+  * Use github repo as homepage and source URL.
+  * Remove python3 from description.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 27 Jan 2022 10:23:10 +0100
+
 wcwidth (0.1.9+dfsg1-2) unstable; urgency=medium
 
   * Drop PyPy support.

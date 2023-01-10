@@ -9,5 +9,16 @@ override_dh_auto_build:
 	python3 setup.py update
 	dh_auto_build
 
+override_dh_auto_install:
+	set -ex ; for i in `py3versions -vr 2>/dev/null` ; do \
+		python$$i setup.py install --install-layout=deb --root $(CURDIR)/debian/tmp ; \
+	done
+
+ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
+	set -ex ; for i in `py3versions -vr 2>/dev/null` ; do \
+		PYTHONPATH=$(CURDIR)/debian/tmp/usr/lib/python3/dist-packages python$$i -m pytest tests ; \
+	done
+endif
+
 override_dh_auto_test:
-	dh_auto_test -- --test-pytest
+	echo "Do nothing ..."
