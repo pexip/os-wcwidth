@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: wcwidth
 Upstream-Contact: Jeff Quast <contact@jeffquast.com>
-Source: https://pypi.python.org/pypi/wcwidth
+Source: https://github.com/jquast/wcwidth
 Files-Excluded:
  wcwidth/table_zero.py
  wcwidth/table_wide.py

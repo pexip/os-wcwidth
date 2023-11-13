@@ -1,0 +1,45 @@
+Description: Use data from unicode-data
+ Do not fetch from internet at build time.
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: no
+Last-Update: 2022-01-27
+
+--- wcwidth-0.2.5+dfsg1.orig/bin/update-tables.py
++++ wcwidth-0.2.5+dfsg1/bin/update-tables.py
+@@ -25,7 +25,7 @@ except ImportError:
+     # py3
+     from urllib.request import urlopen
+ 
+-URL_UNICODE_DERIVED_AGE = 'http://www.unicode.org/Public/UCD/latest/ucd/DerivedAge.txt'
++URL_UNICODE_DERIVED_AGE = 'file:///usr/share/unicode/DerivedAge.txt'
+ EXCLUDE_VERSIONS = ['2.0.0', '2.1.2', '3.0.0', '3.1.0', '3.2.0', '4.0.0']
+ PATH_UP = os.path.relpath(
+     os.path.join(
+@@ -116,8 +116,7 @@ def do_east_asian(versions):
+     for version in versions:
+         fin = os.path.join(PATH_DATA, 'EastAsianWidth-{version}.txt')
+         fout = os.path.join(PATH_CODE, 'table_wide.py')
+-        url = ('http://www.unicode.org/Public/{version}/'
+-               'ucd/EastAsianWidth.txt')
++        url = ('file:///usr/share/unicode/EastAsianWidth.txt')
+         try:
+             do_retrieve(url=url.format(version=version),
+                         fname=fin.format(version=version))
+@@ -137,8 +136,7 @@ def do_zero_width(versions):
+     fout = os.path.join(PATH_CODE, 'table_zero.py')
+     for version in versions:
+         fin = os.path.join(PATH_DATA, 'DerivedGeneralCategory-{version}.txt')
+-        url = ('http://www.unicode.org/Public/{version}/ucd/extracted/'
+-               'DerivedGeneralCategory.txt')
++        url = ('file:///usr/share/unicode/extracted/DerivedGeneralCategory.txt')
+         try:
+             do_retrieve(url=url.format(version=version),
+                         fname=fin.format(version=version))
+@@ -264,7 +262,6 @@ def do_write_table(fname, variable, tabl
+         print(f"writing {fname} ... ", end='')
+         fout.write(
+             f'"""{variable.title()} table, created by bin/update-tables.py."""\n'
+-            f"# Generated: {utc_now.isoformat()}\n"
+             f"{variable} = {{\n")
+ 
+         for version_key, version_table in table.items():
