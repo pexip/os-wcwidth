@@ -8,8 +8,12 @@ Build-Depends:
  debhelper-compat (= 13),
  dh-python,
  python3-all,
+ python3-dateutil,
+ python3-jinja2,
  python3-pytest,
  python3-pytest-cov,
+ python3-requests,
+ python3-requests-file,
  python3-setuptools,
  unicode-data,
 Standards-Version: 4.5.1

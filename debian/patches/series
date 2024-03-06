@@ -1,3 +1,2 @@
 use-data-from-unicode-data.patch
-remove-looponfailroots-option-from-tox.ini.patch
-0003-bin-update-tables.py-Remove-comment-which-embeds-the.patch
+remove-build-path-and-timestamp.patch

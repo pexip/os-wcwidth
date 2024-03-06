@@ -55,6 +55,15 @@ release files:
 ``DerivedGeneralCategory-13.0.0.txt``
   *Date: 2019-10-21, 14:30:32 GMT*
 
+``DerivedGeneralCategory-14.0.0.txt``
+  *Date: 2021-07-10, 00:35:08 GMT*
+
+``DerivedGeneralCategory-15.0.0.txt``
+  *Date: 2022-04-26, 23:14:35 GMT*
+
+``DerivedGeneralCategory-15.1.0.txt``
+  *Date: 2023-07-28, 23:34:02 GMT*
+
 ``EastAsianWidth-4.1.0.txt``
   *Date: 2005-03-17, 15:21:00 PST [KW]*
 
@@ -102,3 +111,19 @@ release files:
 
 ``EastAsianWidth-13.0.0.txt``
   *Date: 2029-01-21, 18:14:00 GMT [KW, LI]*
+
+``EastAsianWidth-14.0.0.txt``
+  *Date: 2021-07-06, 09:58:53 GMT [KW, LI]*
+
+``EastAsianWidth-15.0.0.txt``
+  *Date: 2022-05-24, 17:40:20 GMT [KW, LI]*
+
+``EastAsianWidth-15.1.0.txt``
+  *Date: 2023-07-28, 23:34:08 GMT*
+
+``emoji-variation-sequences-12.0.0.txt``
+  *Date: 2019-01-15, 12:10:05 GMT*
+
+``emoji-variation-sequences-15.1.0.txt``
+  *Date: 2023-02-01, 02:22:54 GMT*
+

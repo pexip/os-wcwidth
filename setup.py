@@ -44,7 +44,7 @@ def main():
     setuptools.setup(
         name='wcwidth',
         # NOTE: manually manage __version__ in wcwidth/__init__.py !
-        version='0.2.5',
+        version='0.2.13',
         description=(
             "Measures the displayed width of unicode strings in a terminal"),
         long_description=codecs.open(
@@ -57,7 +57,6 @@ def main():
         packages=['wcwidth'],
         url='https://github.com/jquast/wcwidth',
         package_data={
-            'wcwidth': ['*.json'],
             '': ['LICENSE', '*.rst'],
         },
         zip_safe=True,
@@ -73,6 +72,10 @@ def main():
             'Programming Language :: Python :: 3.6',
             'Programming Language :: Python :: 3.7',
             'Programming Language :: Python :: 3.8',
+            'Programming Language :: Python :: 3.9',
+            'Programming Language :: Python :: 3.10',
+            'Programming Language :: Python :: 3.11',
+            'Programming Language :: Python :: 3.12',
             'Topic :: Software Development :: Libraries',
             'Topic :: Software Development :: Localization',
             'Topic :: Software Development :: Internationalization',
@@ -83,7 +86,7 @@ def main():
             'combining',
             'console',
             'eastasian',
-            'emoji'
+            'emoji',
             'emulator',
             'terminal',
             'unicode',
