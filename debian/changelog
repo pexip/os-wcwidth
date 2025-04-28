@@ -1,3 +1,16 @@
+wcwidth (0.2.13+dfsg1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Acknowledge NMU (closes: #1029629).
+  * debian/copyright: Generalize Files-Excluded slightly.
+  * New upstream release.
+    - Switch to using importlib.metadata (closes: #1042241).
+  * Rewrite patches to update-tables.  This required including a file from
+    an old version of the unicode-data package, so update debian/copyright
+    to match.
+
+ -- Colin Watson <cjwatson@debian.org>  Wed, 06 Mar 2024 15:26:35 +0000
+
 wcwidth (0.2.5+dfsg1-1.1+pexip24u3) pexip-bookworm; urgency=medium
 
   * New versioning scheme

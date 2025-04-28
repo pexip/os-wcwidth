@@ -6,7 +6,7 @@ export PYBUILD_NAME=wcwidth
 	dh $@ --with python3 --buildsystem=pybuild
 
 override_dh_auto_build:
-	python3 setup.py update
+	python3 bin/update-tables.py --no-check-last-modified
 	dh_auto_build
 
 override_dh_auto_install:
