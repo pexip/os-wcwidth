@@ -1,3 +1,9 @@
+wcwidth (0.2.13+dfsg1-1+pexip25u1) pexip-trixie; urgency=medium
+
+  * Initial trixie build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Tue, 29 Apr 2025 23:00:05 +0100
+
 wcwidth (0.2.13+dfsg1-1) unstable; urgency=medium
 
   * Team upload.
